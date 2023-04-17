@@ -2,6 +2,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+import java.util.Scanner;
+
 public class AddChild {
 
     //iniciar novas crianças e fazer a logicas q permite o numero de crianças com bola ser menor doq as com bola
@@ -11,7 +13,11 @@ public class AddChild {
     private int playingTime;
     private int quietTime;
     private Basket basket;
+
+    private int countBallChild = 0;
+    private int countNoBallChild = 0;
     List<ThreadChild> childCount = new ArrayList<>();
+    Scanner n = new Scanner(System.in);
     //childCount.add();
 
     public AddChild(int idChild, String ball, int playingTime, int quietTime, Basket basket){
@@ -25,23 +31,18 @@ public class AddChild {
     }
 
     public boolean verifyBall(String ball){
-        if(ball.equals("S")){
-
-            this.ball = true;
-
-        } else {
-
-            this.ball = false;
-
-        }
+        this.ball = ball.equals("S");
 
         return this.ball;
 
     }
 
     public boolean verifyChild(){
-        childCount.size();
-        return true;//ajeitar
+        //metodo para verificar se M<N
+        //so permite q M<N se o quando não existe nenhuma criança
+        if(this.countNoBallChild == 0 && this.countBallChild == 0){return true;}
+        else {countChild();
+            return this.countBallChild < this.countNoBallChild;}
     }
 
     public void newChild(){
@@ -50,8 +51,18 @@ public class AddChild {
             child.start();
             childCount.add(child);
         } else {
-            System.out.println("O número de crianças com bola deve ser menor doq a metade, por favor crie uma criança sem bola");
+            System.out.println("O número de crianças com bola deve ser menor doq as com bola, deseja criar criança sem bola? (S/N)");
+            verifyBall(n.next());
+            this.ball = verifyBall(n.next());;
+            newChild();
         }
+
+    }
+
+    public void countChild(){
+        //metodo para contar crianças com bola e sem bola
+        if(this.ball) this.countBallChild++;
+        else {this.countNoBallChild++;}
 
     }
 }
