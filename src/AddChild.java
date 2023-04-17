@@ -8,7 +8,7 @@ public class AddChild {
 
     //iniciar novas crianças e fazer a logicas q permite o numero de crianças com bola ser menor doq as com bola
     //vou chamar um metodo
-    private  int idChild;
+    private String idChild;
     private boolean ball; //define se a criança vai ser produtora ou consumidora
     private int playingTime;
     private int quietTime;
@@ -20,7 +20,7 @@ public class AddChild {
     Scanner n = new Scanner(System.in);
     //childCount.add();
 
-    public AddChild(int idChild, String ball, int playingTime, int quietTime, Basket basket){
+    public AddChild(String idChild, String ball, int playingTime, int quietTime, Basket basket){
 
         this.idChild = idChild;
         this.ball = verifyBall(ball);
@@ -47,7 +47,7 @@ public class AddChild {
 
     public void newChild(){
         if(verifyChild()){
-            ThreadChild child = new ThreadChild(1,ball, 20, 29, this.basket);
+            ThreadChild child = new ThreadChild(this.idChild, this.ball, this.playingTime, this.quietTime, this.basket);
             child.start();
             childCount.add(child);
         } else {

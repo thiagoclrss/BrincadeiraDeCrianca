@@ -12,7 +12,7 @@ public class Main {
         int permits = 1;
         Semaphore mutex = new Semaphore(permits);
         Semaphore emptyBasket = new Semaphore(qntBallsBasket);
-        Semaphore fullBasket = new Semaphore(qntBallsBasket);
+        Semaphore fullBasket = new Semaphore(0);
         Basket basket = new Basket(qntBallsBasket, mutex, emptyBasket, fullBasket);
         System.out.println(" Para criar nova criança digite: 1 ");
         System.out.println("Caso queira encerrar o programa digite: 2");
@@ -21,8 +21,8 @@ public class Main {
 
         do{
 
-            System.out.println("- Informe um número: ");
-            int idThread = n.nextInt();
+            System.out.println("- Informe o nome da criança: ");
+            String idThread = n.next();
             System.out.println("- Criança estará com bola? (S/N) ");
             String ball = n.next();
             System.out.println("- Informe quanto tempo a criança brincará: (s) ");
@@ -38,6 +38,8 @@ public class Main {
         } while (item == 1);
     }
 }
+
+//o cesto deve estar inicialmente vazio
 
 /*
 System.out.println("- Informe um número: ");

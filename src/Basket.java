@@ -22,7 +22,7 @@ public class Basket {
 
             fullBasket.acquire(); //o cesto precisa começar vazio
             mutex.acquire();
-            System.out.println(" Criança " + idThread + " pegou a bola do cesto.");
+            System.out.println(" \t \t \t \t Criança " + idThread + " pegou a bola do cesto.");
             //System.out.println(" Criança " + idThread + " está brincando.");
             this.qntBallsBasket--;
 
@@ -47,7 +47,7 @@ public class Basket {
 
             emptyBasket.acquire();
             mutex.acquire();
-            System.out.println(" Criança " + idThread + " guardou a bola no cesto.");
+            System.out.println(" \t \t \t \tCriança " + idThread + " guardou a bola no cesto.");
             this.qntBallsBasket++;
 
         } catch (InterruptedException e){
