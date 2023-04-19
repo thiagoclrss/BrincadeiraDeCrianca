@@ -1,3 +1,5 @@
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.Semaphore;
 
 public class Basket {
@@ -63,6 +65,18 @@ public class Basket {
         }
 
         return this.qntBallsBasket;
+    }
+
+    public void playingOrRestingTime(int playingResting){
+
+        //final long playingResting = (long)teste;
+        int timeCount = playingResting;
+        Timer timer = new Timer();
+        //final long seconds = (1000 * playingResting);
+        Count count = new Count(playingResting);
+        timer.schedule(count,0, 1000);
+
+
     }
 
 }
