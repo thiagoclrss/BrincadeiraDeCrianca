@@ -10,7 +10,7 @@ public class Count extends TimerTask {
 
     @Override
     public void run() {
-        System.out.print("\r" + timeCount + "\r");
+        System.out.print("\t\t\t\t \r" + timeCount + "\r");
         regressiveCount();
     }
 

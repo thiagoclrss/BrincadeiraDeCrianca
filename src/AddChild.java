@@ -12,7 +12,6 @@ public class AddChild {
     private boolean ball; //define se a criança vai ser produtora ou consumidora
     private int playingTime;
     private int quietTime;
-    private Basket basket;
 
     private int countBallChild = 0;
     private int countNoBallChild = 0;
@@ -20,21 +19,17 @@ public class AddChild {
     Scanner n = new Scanner(System.in);
     //childCount.add();
 
-    public AddChild(String idChild, String ball, int playingTime, int quietTime, Basket basket){
+    public AddChild(String idChild, String ball, int playingTime, int quietTime){
 
         this.idChild = idChild;
         this.ball = verifyBall(ball);
         this.playingTime = playingTime;
         this.quietTime = quietTime;
-        this.basket = basket;
 
     }
 
     public boolean verifyBall(String ball){
-        this.ball = ball.equals("S");
-
-        return this.ball;
-
+        return ball.equals("S");
     }
 
     public boolean verifyChild(){
@@ -47,9 +42,9 @@ public class AddChild {
 
     public void newChild(){
         if(verifyChild()){
-            ThreadChild child = new ThreadChild(this.idChild, this.ball, this.playingTime, this.quietTime, this.basket);
+            ThreadChild child = new ThreadChild(this.idChild, this.ball, this.playingTime, this.quietTime);
             child.start();
-            childCount.add(child);
+            //childCount.add(child);
         } else {
             System.out.println("O número de crianças com bola deve ser menor doq as com bola, deseja criar criança sem bola? (S/N)");
             verifyBall(n.next());

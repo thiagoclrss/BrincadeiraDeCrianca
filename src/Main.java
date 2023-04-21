@@ -9,11 +9,9 @@ public class Main {
         Scanner n = new Scanner(System.in);
         System.out.println("Informe a quantidade de bolas desejadas no cesto");
         int qntBallsBasket = n.nextInt();
-        int permits = 1;
-        Semaphore mutex = new Semaphore(permits);
-        Semaphore emptyBasket = new Semaphore(qntBallsBasket);
-        Semaphore fullBasket = new Semaphore(0);
-        Basket basket = new Basket(qntBallsBasket, mutex, emptyBasket, fullBasket);
+
+
+        Basket basket = new Basket(qntBallsBasket);
         System.out.println(" Para criar nova criança digite: 1 ");
         System.out.println("Caso queira encerrar o programa digite: 2");
         int item = n.nextInt();
@@ -29,7 +27,7 @@ public class Main {
             int playingTime = n.nextInt();
             System.out.println("- Informe quanto tempo a criança descansará: (s) ");
             int quietTime = n.nextInt();
-            AddChild addChild = new AddChild(idThread, ball, playingTime, quietTime, basket);
+            AddChild addChild = new AddChild(idThread, ball, playingTime, quietTime);
             addChild.newChild();
 
             System.out.println(" Para criar nova criança digite: 1 ");
