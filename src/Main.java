@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.Semaphore;
 
 public class Main {
     public static void main(String[] args) {
@@ -27,7 +24,7 @@ public class Main {
             int playingTime = n.nextInt();
             System.out.println("- Informe quanto tempo a criança descansará: (s) ");
             int quietTime = n.nextInt();
-            AddChild addChild = new AddChild(idThread, ball, playingTime, quietTime);
+            ChildFactory addChild = new ChildFactory(idThread, ball, playingTime, quietTime);
             addChild.newChild();
 
             System.out.println(" Para criar nova criança digite: 1 ");
@@ -37,17 +34,5 @@ public class Main {
     }
 }
 
-//o cesto deve estar inicialmente vazio
 
-/*
-System.out.println("- Informe um número: ");
-                int idThread = n.nextInt();
-                System.out.println("- Criança estará com bola? (S/N) ");
-                String ball = n.next();
-                System.out.println("- Informe quanto tempo a criança brincará: (s) ");
-                int playingTime = n.nextInt();
-                System.out.println("- Informe quanto tempo a criança descansará: (s) ");
-                int quietTime = n.nextInt();
-                AddChild addChild = new AddChild(idThread, ball, playingTime, quietTime, basket);
-                addChild.newChild();
- */
+

@@ -4,7 +4,7 @@ import java.util.List;
 
 import java.util.Scanner;
 
-public class AddChild {
+public class ChildFactory {
 
     //iniciar novas crianças e fazer a logicas q permite o numero de crianças com bola ser menor doq as com bola
     //vou chamar um metodo
@@ -19,7 +19,7 @@ public class AddChild {
     Scanner n = new Scanner(System.in);
     //childCount.add();
 
-    public AddChild(String idChild, String ball, int playingTime, int quietTime){
+    public ChildFactory(String idChild, String ball, int playingTime, int quietTime){
 
         this.idChild = idChild;
         this.ball = verifyBall(ball);
