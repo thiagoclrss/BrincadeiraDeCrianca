@@ -1,25 +1,23 @@
 
 import java.util.ArrayList;
 import java.util.List;
-
 import java.util.Scanner;
 
-public class ChildFactory {
-
-    //iniciar novas crianças e fazer a logicas q permite o numero de crianças com bola ser menor doq as com bola
-    //vou chamar um metodo
-    private String idChild;
-    private boolean ball; //define se a criança vai ser produtora ou consumidora
-    private int playingTime;
-    private int quietTime;
+public class ChildFactory
+{
+    /*Iniciar novas crianças e fazer as lógicas que permite o número de crianças com bola seja menor do que as sem bola*/
+    private final String idChild;
+    private boolean ball; //Define se a criança vai ser produtora ou consumidora
+    private final int playingTime;
+    private final int quietTime;
 
     private int countBallChild = 0;
     private int countNoBallChild = 0;
     List<ThreadChild> childCount = new ArrayList<>();
     Scanner n = new Scanner(System.in);
-    //childCount.add();
 
-    public ChildFactory(String idChild, String ball, int playingTime, int quietTime){
+    public ChildFactory(String idChild, String ball, int playingTime, int quietTime)
+    {
 
         this.idChild = idChild;
         this.ball = verifyBall(ball);
@@ -28,34 +26,42 @@ public class ChildFactory {
 
     }
 
-    public boolean verifyBall(String ball){
+    public boolean verifyBall(String ball) /*Função que verifica se a criança possui ou não a bola*/
+    {
         return ball.equals("S");
     }
 
-    public boolean verifyChild(){
-        //metodo para verificar se M<N
-        //so permite q M<N se o quando não existe nenhuma criança
+    public boolean verifyChild()
+        /*Método para verificar se M<N; Só permite que M>N se não haviam crianças anteriormente*/
+    {
         if(this.countNoBallChild == 0 && this.countBallChild == 0){return true;}
-        else {countChild();
-            return this.countBallChild < this.countNoBallChild;}
+        else
+        {
+            countChild();
+            return this.countBallChild < this.countNoBallChild;
+        }
     }
 
-    public void newChild(){
-        if(verifyChild()){
-            ThreadChild child = new ThreadChild(this.idChild, this.ball, this.playingTime, this.quietTime);
+    public void newChild() /*Cria uma nova Thread "criança", dadas as condições satisfeitas*/
+    {
+        if(verifyChild()) /*Caso seja possível criar uma thread nova, usa as credenciais dadas pelo usuário durante a execução*/
+        {
+            ThreadChild child = new ThreadChild(this.idChild, this.ball, this.playingTime, this.quietTime); /*Instancia uma thread*/
             child.start();
             //childCount.add(child);
-        } else {
-            System.out.println("O número de crianças com bola deve ser menor doq as com bola, deseja criar criança sem bola? (S/N)");
+        }
+        else /*Caso não seja possível, pede para que tente novamente*/
+        {
+            System.out.println("O número de crianças com bola deve ser menor do que as com bola, deseja criar criança sem bola? (S/N)");
             verifyBall(n.next());
-            this.ball = verifyBall(n.next());;
+            this.ball = verifyBall(n.next());
             newChild();
         }
 
     }
 
-    public void countChild(){
-        //metodo para contar crianças com bola e sem bola
+    public void countChild()/*Método para contar crianças com bola e sem bola*/
+    {
         if(this.ball) this.countBallChild++;
         else {this.countNoBallChild++;}
 
