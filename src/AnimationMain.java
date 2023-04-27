@@ -1,18 +1,28 @@
+
+import javax.swing.*;
 import java.awt.image.BufferedImage;
 
-public class AnimationMain {
+public class AnimationMain
+{
+    public static void main(String [] args)
+    {
+        new menuInicial();
+    }
+
+}
+
+/*public class AnimationMain
+{
 
     public static BufferedImage img = null;
-    public static void main(String [] args){
-
-
+    public static void main(String [] args)
+    {
             /*
             try  {
                 img = ImageIO.read(new File("backGroundPark.jpg"));
             } catch(IOException e) {
                 e.printStackTrace();
             }
-
 
             //Cria texto
             JLabel jlabel = new JLabel();
@@ -27,17 +37,14 @@ public class AnimationMain {
             janela.setSize(1280, 720);
             janela.setResizable(false);
             janela.setLocationRelativeTo(null);
-
-
+            
             Image dimg = img.getScaledInstance(janela.getWidth(), janela.getHeight(), Image.SCALE_SMOOTH);
-
             ImageIcon imageIcon = new ImageIcon(dimg);
             jlabel.setIcon(imageIcon);
-
             janela.setVisible(true);
             janela.add(jlabel);
-            */
+            *
 
     }
 
-}
+}*/
