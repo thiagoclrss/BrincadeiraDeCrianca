@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a184d83-479d-4e98-b3e3-8bb9a31b5779" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AnimationMain.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Basket.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChildFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Count.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ThreadChild.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basket.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/campo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kid-removebg-preview.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kid_playing_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kid_playing_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kid_with_ball.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output-onlinepngtools.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2OztUrZq98t1O3jnYfDVKrvZCJV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/thiagoclrss/Documentos/faculdade/sistemasOperacionais/BrincadeiraDeCrianca",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a184d83-479d-4e98-b3e3-8bb9a31b5779" name="Changes" comment="" />
+      <created>1682575257004</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682575257004</updated>
+    </task>
+    <servers />
+  </component>
+</project>
