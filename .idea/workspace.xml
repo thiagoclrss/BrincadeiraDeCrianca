@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="BrincadeiraDeCrianca:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4a184d83-479d-4e98-b3e3-8bb9a31b5779" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AnimationMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Basket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChildFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Count.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ThreadChild.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basket.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/campo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kid-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kid_playing_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kid_playing_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kid_with_ball.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output-onlinepngtools.png" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/BrincadeiraDeCrianca_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI/MyPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +34,24 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "/home/thiagoclrss/Documentos/faculdade/sistemasOperacionais/BrincadeiraDeCrianca",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="BrincadeiraDeCrianca.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/BrincadeiraDeCrianca_jar/BrincadeiraDeCrianca.jar" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.BrincadeiraDeCrianca.jar" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,5 +62,8 @@
       <updated>1682575257004</updated>
     </task>
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BrincadeiraDeCrianca$.ic" NAME=" Coverage Results" MODIFIED="1682729210815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

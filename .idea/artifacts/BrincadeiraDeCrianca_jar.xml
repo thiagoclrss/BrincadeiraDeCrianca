@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="BrincadeiraDeCrianca:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/BrincadeiraDeCrianca_jar</output-path>
+    <root id="archive" name="BrincadeiraDeCrianca.jar">
+      <element id="module-output" name="BrincadeiraDeCrianca" />
+    </root>
+  </artifact>
+</component>

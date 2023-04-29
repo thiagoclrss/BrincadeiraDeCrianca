@@ -101,7 +101,7 @@ public class MyPanel extends JPanel implements ActionListener {
     }
 
     private void goToRest(int index) {
-        goToXY(100, 100, index);
+        goToXY(100, 180, index);
     }
 
     @Override
